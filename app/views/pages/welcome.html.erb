@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html ng-app>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         h2 {
             font-family: 'Roboto', sans-serif;
+        }
+        .btn-info {
+            color: black;
         }
     </style>
 </head>
@@ -28,23 +33,23 @@
     </header>
     <main>
         <body style="background-image:url(subtle-vertical-stripes.png)">
-            <h2> Welcome to my little corner of the Internet! I am a budding Ruby and Rails developer with experience in Web development, Java and C.</h2>
-            <div ng-controller="ButtonsCtrl">
-                <button type="button" class="btn btn-primary" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
-                    My Work
-                </button>
+            <div class="container-fluid">
+                <div class="col-md-10">
+                    <h2> Welcome to my little corner of the Internet! I am a budding Ruby and Rails developer with experience in Web development, Java and C.</h2>
+                    <div class="col-md-offset-5" ng-controller="ButtonsCtrl">
+                        <button type="button" class="btn btn-info btn-lg" ng-model="singleModel" btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">My Little Projects</button>
+                    </div>
+                </div>
             </div>
         </body>
-        <footer>
-            <p> Brian Battell </p>
-            <!-- copyright here -->
-            <img src="" </img>
-            <!-- Linked In -->
-            <img src="" <a href=""</a> </img>
-            <!-- Github -->
-            <img src="" <a href=""</a> </img>
+        <footer class="navbar navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="col-md-10">
+                    <p class= "col-md-offset-5"> Brian Battell  <img style= "width: 12px; height: 12px;" src="copyrighted.svg" </img>  <a href="https://www.linkedin.com/pub/brian-battell/62/983/815"><img style= "width: 24px; height: 24px;"src="linkedin1.svg"</a></img>  <a href="https://github.com/BrianB86"><img style= "width: 24px; height: 24px;"src="socialnetwork180.svg" <a href="https://github.com/BrianB86"</a></img></p>
 
-            <div>Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
+                    <p class="col-md-offset-3">Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+                </div>
+            </div>
         </footer>
     </main>
 </html>
