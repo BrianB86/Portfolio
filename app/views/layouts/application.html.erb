@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Portfolio</title>
-        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-        <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-        <%= csrf_meta_tags %>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Portfolio</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,500,700' rel='stylesheet' type='text/css'>
     </head>
     <header>
@@ -28,18 +28,20 @@
             </div>
         </nav>
     </header>
-<body>
+<body style="background-image:url(subtle-vertical-stripes.png)">
 
 <%= yield %>
 
 </body>
-        <footer class="navbar navbar-fixed-bottom">
-            <div class="container-fluid">
-                <div class="col-md-10">
-                    <p class= "col-md-offset-5"> Brian Battell  <img style= "width: 12px; height: 12px;" src="copyrighted.svg" </img>  <a href="https://www.linkedin.com/pub/brian-battell/62/983/815"><img style= "width: 24px; height: 24px;"src="linkedin1.svg"</a></img>  <a href="https://github.com/BrianB86"><img style= "width: 24px; height: 24px;"src="socialnetwork180.svg" <a href="https://github.com/BrianB86"</a></img></p>
-
-                    <p class="col-md-offset-3">Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
-                </div>
-            </div>
-        </footer>
+<br>
+<br>
+<br>
+<footer>
+    <div class="container-fluid">
+        <div class="col-md-9">
+            <p class= "col-md-offset-5"> Brian Battell  <img style= "width: 12px; height: 12px;" src="copyrighted.svg" </img>  <a href="https://www.linkedin.com/pub/brian-battell/62/983/815"><img style= "width: 24px; height: 24px;"src="linkedin1.svg"</a></img>  <a href="https://github.com/BrianB86"><img style= "width: 24px; height: 24px;"src="socialnetwork180.svg" <a href="https://github.com/BrianB86"</a></img></p>
+            <p class="col-md-offset-3">Icons made by <a href="http://www.flaticon.com/authors/elegant-themes" title="Elegant Themes">Elegant Themes</a>, <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></p>
+        </div>
+    </div>
+</footer>
 </html>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  root 'pages#welcome'
-  get '/portfolio', to: 'pages#portfolio'
+    root 'pages_controller#welcome'
+    get '/portfolio', to: 'pages_controller#portfolio'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

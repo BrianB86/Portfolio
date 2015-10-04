@@ -1,0 +1,30 @@
+    <main>
+        <body ng-app="SlideShow">
+          <div class="panel panel-success">
+            <div class="panel-heading">
+              <h1 ng-if="name">Hello, {{name}}</h1>
+            </div>
+            <div class="panel-body">
+              <form class="form-inline">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Enter your name" autofocus ng-model="name">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+          <div ng-controller="PagesController">
+            <div style="height: 305px">
+              <carousel interval="inter" no-wrap="noWrapSlides">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                  <img ng-src="{{slide.image}}" style="margin:auto;">
+                  <div class="carousel-caption">
+                    <h4>Slide {{$index}}</h4>
+                    <p>{{slide.text}}</p>
+                  </div>
+                </slide>
+              </carousel>
+            </div>
+          </div>
+        </body>
+    </main>

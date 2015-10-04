@@ -1,0 +1,45 @@
+    <div ng-app="SlideShow">
+          <div ng-controller="PagesController">
+            <div class = "container" style="width: 700px; height: 700px;">
+              <carousel interval="inter" no-wrap="noWrapSlides">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                <a href="#summary">
+                  <img ng-src="{{slide.image}}" style="margin:auto;">
+                </a>
+                </slide>
+              </carousel>
+            </div>
+          </div>
+          <section name = "broadway"class= "col-md-offset-4" style= "border-top: thick #ff0000;">
+            <h3>BroadWay</h3>
+            <p>A simple static rails site that shows a main page.</p>
+            <a href="">BroadWay</a>
+          </section>
+          <section class= "col-md-offset-4">
+            <h3>BoltNetwork</h3>
+            <p>Two static rails web pages a main and a About page.</p>
+            <a href="">BoltNetwork</a>
+          </section>
+          <section class= "col-md-offset-4">
+            <h3>Innovation Cloud</h3>
+            <p>A main page that takes in emails and stores them in a database. 
+              When a user enters an email it takes them to a thank you page.</p>
+            <a href="">Innovation Cloud</a>
+          </section>
+          <a name="summary"></a>
+          <section class= "col-md-offset-4">
+            <h3>Threadly</h3>
+            <p>This rails site takes user input and stores it in a database. The site shows previous user input on the website.</p>
+            <a href="">Threadly</a>
+          </section>
+          <section class= "col-md-offset-4">
+            <h3>Bookmarks</h3>
+            <p>A rails site that takes database entires and produces them on the site.</p>
+            <a href="">BookMarks</a>
+          </section>
+            <section class= "col-md-offset-4">
+            <h3>Bass Music</h3>
+            <p>A rails site that has a database of music Albums and a main page that retrives them. There is also a details page that lists the songs an each album which is also included in the database.</p>
+            <a href="">Bass Music</a>
+          </section>
+    </div>
