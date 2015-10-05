@@ -17,6 +17,9 @@ SlideShow.config(['$routeProvider',
                 templateUrl: "portfolio.html"
                 controller: "PagesController"
             )
+            .otherwise(
+                redirectTo: "/"
+            )
 ])
 
 controllers = angular.module('controllers', [])
