@@ -17,6 +17,10 @@ SlideShow.config(['$routeProvider',
                 templateUrl: "portfolio.html"
                 controller: "PagesController"
             )
+            .when('/about',
+                templateUrl: "about.html"
+                controller: "AboutController"
+            )
             .otherwise(
                 redirectTo: "/"
             )
@@ -46,4 +50,8 @@ controllers.controller("PagesController", [ '$scope',
             image: 'InnovationCloudMain.png'
         }];
 
+])
+
+controllers.controller("AboutController", ['$scope',
+    ($scope)->
 ])
